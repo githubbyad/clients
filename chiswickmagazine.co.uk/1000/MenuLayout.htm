@@ -1,0 +1,22 @@
+{{LayoutMenus1Begin}}
+{{File:Menus-Horizontal1.js}}
+{{Where:MenuTypeInclude:'Horizontal', 'Vertical', 'Default'}}
+function GetHorizontalMenu1(){document.write({{PutHtmlChar39}}
+<div class="menu_bar">
+<div class="menu_div">
+{{RepeatBegin1}}
+<div class="menubodyhorizontal active has-sub custom_menu_{{MenuId}}">
+<a href="{{MenuLink}}" style="{{MenuStyle}}" class="menubodyhorizontal custom_menu_{{MenuId}}">{{Menu}}<i style="display:none;" class="fa fa-angle-down" aria-hidden="true"></i></a>
+<div class="submenu_div column7 custom_menu_{{MenuId}}">
+{{RepeatBegin2}}
+<div class="submenubodyhorizontal  custom_Submenu_{{SubMenuId}}" style="{{CSSDisplay}}">
+<a href={{SubMenuLink}} style=" {{SubMenuMouseInOutColor}} {{SubMenuStyle}}" class="submenubodyhorizontal custom_Submenu_{{SubMenuId}} " name="{{SubMenuLink}}" data="{{SubMenuId}}"><i class="fa fa-angle-right" aria-hidden="true"></i>{{SubMenu}}</a>
+</div>
+{{RepeatEnd2}}
+</div>
+</div>
+{{RepeatEnd1}}
+</div>
+</div>
+{{PutHtmlChar39}});}
+{{LayoutMenus1End}}
